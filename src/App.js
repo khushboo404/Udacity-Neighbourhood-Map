@@ -148,7 +148,7 @@ class App extends Component {
         return (
             <main>
                 <div className="header">
-                    <h3 className="title" >Neighborhood Map</h3>
+                    <h3 className="title" >Udacity | Neighborhood Map</h3>
                     <img onClick={(e) => this.setState({ toggle: !this.state.toggle})} src={require('./img/toggleButton.png')} alt="toggle sidebar" className="toggle" title="Toggle Me" />
                 </div>
                 <div className={"sidebar " + (this.state.toggle && "sidebar-close")} >

@@ -68,7 +68,6 @@ class LocationList extends Component {
                 <ul>
                     {this.state.suggestions && locationlist}
                 </ul>
-                <button className="button_list" onClick={this.toggleLocations}>Show/Hide Locations</button>
             </div>
         );
     }
