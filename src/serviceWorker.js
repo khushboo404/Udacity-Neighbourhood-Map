@@ -1,5 +1,4 @@
-// This optional code is used to register a service worker.
-// register() is not called by default.
+// In production, we register a service worker to serve assets from local cache.
 
 // This lets the app load faster on subsequent visits in production, and gives
 // it offline capabilities. However, it also means that developers (and users)
@@ -9,6 +8,7 @@
 
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read http://bit.ly/CRA-PWA
+// This link also includes instructions on opting out of this behavior.
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||

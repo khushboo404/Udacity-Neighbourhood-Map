@@ -60,12 +60,12 @@ class LocationList extends Component {
         });
         return (
             <div>  
-                <input role="search" aria-labelledby="filter" id="search-field" className="search-field" type="text" placeholder="Search Location"
+                <input role="search" aria-labelledby="filter" id="search-field" className="search-field" aria-label="Search locations" type="text" placeholder="Search Location"
                        value={this.state.query} onChange={this.filterLocations}/>
                 
                 { this.state.flocations.length === 0 && this.state.query !== '' && (<ul><li>Not Found</li></ul>)}
                 
-                <ul>
+                <ul aria-label="List of locations">
                     {this.state.suggestions && locationlist}
                 </ul>
             </div>

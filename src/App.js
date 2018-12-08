@@ -147,15 +147,17 @@ class App extends Component {
     render() {
         return (
             <main>
-                <div className="header">
-                    <h3 className="title" >Udacity | Neighborhood Map</h3>
-                    <img onClick={(e) => this.setState({ toggle: !this.state.toggle})} src={require('./img/toggleButton.png')} alt="toggle sidebar" className="toggle" title="Toggle Me" />
+                <div className="header" aria-label="Map Header">
+                    <nav>
+                        <h3 className="title" >Udacity | Neighborhood Map</h3>
+                        <img onClick={(e) => this.setState({ toggle: !this.state.toggle})} src={require('./img/toggleButton.png')} alt="toggle sidebar" className="toggle" title="Toggle Me" />
+                    </nav>
                 </div>
-                <div className={"sidebar " + (this.state.toggle && "sidebar-close")} >
+                <aside className={"sidebar " + (this.state.toggle && "sidebar-close")} aria-label="Sidebar to search location">
                     <LocationList locations={this.state.allLocations} openInfoWindow={this.openInfoWindow}
                               closeInfoWindow={this.closeInfoWindow}/>
-                </div>
-                <div id="map"></div>
+                </aside>
+                <div id="map" role="application" aria-label="Map of locality"></div>
             </main>
         );
     }
