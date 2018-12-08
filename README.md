@@ -12,7 +12,7 @@ When available in the browser, the site uses a service worker to cache responses
 
 ## Installation and Deployement
 * To run into your system, Download as .zip file or clone this project
-   - $ git clone https://github.com/khushboo404/Udacity-Neighbourhood-Map
+   - $ git clone https://github.com/khushboo404/Udacity-Neighbourhood-Map.git
 * `cd Udacity-Neighborhood-Map`
 * `npm install`
 * `npm run start`
